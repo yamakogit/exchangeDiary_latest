@@ -1065,6 +1065,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="アイコンを変える">
                                     <fontDescription key="titleFontDescription" name="yosugara" family="yosugara" pointSize="12"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="changePhoto" destination="3SX-ZH-nL6" eventType="touchUpInside" id="iHf-q4-hZk"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="buttonFrame" translatesAutoresizingMaskIntoConstraints="NO" id="oc6-ys-z61">
                                 <rect key="frame" x="50" y="564" width="293" height="46"/>
@@ -1079,6 +1082,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="ログアウト">
                                     <fontDescription key="titleFontDescription" name="yosugara" family="yosugara" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logout" destination="3SX-ZH-nL6" eventType="touchUpInside" id="nqG-qV-es8"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="buttonFrame" translatesAutoresizingMaskIntoConstraints="NO" id="7RR-nw-OtP">
                                 <rect key="frame" x="50" y="630" width="293" height="46"/>
@@ -1093,6 +1099,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="アカウント消去">
                                     <fontDescription key="titleFontDescription" name="yosugara" family="yosugara" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteAccount" destination="3SX-ZH-nL6" eventType="touchUpInside" id="r3L-xb-yRB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8LJ-8F-byg"/>
@@ -1140,7 +1149,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="設定" id="ote-yM-VY9"/>
                     <connections>
+                        <outlet property="groupIDLabel" destination="Fmx-RD-Iof" id="RtB-PU-VxQ"/>
                         <outlet property="imageView" destination="YZr-Hu-RJt" id="EIR-WI-0gL"/>
+                        <outlet property="userNameLabel" destination="v1D-BI-8lU" id="Jqn-m9-UUh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5be-GD-zr0" sceneMemberID="firstResponder"/>
@@ -1289,12 +1300,27 @@
                                     <action selector="saveDiary" destination="QiP-jh-QLP" eventType="touchUpInside" id="twX-Vf-Egp"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jQ7-HL-Fb8">
+                                <rect key="frame" x="111" y="257" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="NVR-uC-AbR"/>
+                                    <constraint firstAttribute="height" constant="50" id="RfZ-DX-a0c"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="leh-rY-n2A">
+                                <rect key="frame" x="231" y="257" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="X6k-8y-bNA"/>
+                                    <constraint firstAttribute="height" constant="50" id="fNT-Jj-UN9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vG3-Pw-HMT"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vG3-Pw-HMT" firstAttribute="trailing" secondItem="vUa-HU-H5z" secondAttribute="trailing" constant="72" id="06m-5Y-7is"/>
                             <constraint firstItem="cEi-FV-t17" firstAttribute="leading" secondItem="gol-Xr-myt" secondAttribute="leading" id="3jz-Gt-SMe"/>
+                            <constraint firstItem="vUa-HU-H5z" firstAttribute="trailing" secondItem="leh-rY-n2A" secondAttribute="trailing" constant="40" id="6Zc-uk-COu"/>
                             <constraint firstItem="vG3-Pw-HMT" firstAttribute="trailing" secondItem="66p-rK-ZIG" secondAttribute="trailing" constant="72" id="6br-lc-O2c"/>
                             <constraint firstItem="hmZ-MY-1BG" firstAttribute="top" secondItem="Waz-VV-LPh" secondAttribute="bottom" constant="29" id="GXn-l2-EWw"/>
                             <constraint firstItem="y9k-HP-u5z" firstAttribute="leading" secondItem="Ywu-3o-CLG" secondAttribute="trailing" constant="8" symbolic="YES" id="Gvj-Qi-ibW"/>
@@ -1303,7 +1329,9 @@
                             <constraint firstItem="dRq-ra-F8N" firstAttribute="top" secondItem="vUa-HU-H5z" secondAttribute="bottom" constant="38" id="L8Z-Rm-TiS"/>
                             <constraint firstItem="vG3-Pw-HMT" firstAttribute="trailing" secondItem="hmZ-MY-1BG" secondAttribute="trailing" constant="72" id="Ote-iZ-ykh"/>
                             <constraint firstItem="Ywu-3o-CLG" firstAttribute="top" secondItem="EId-Q9-1BJ" secondAttribute="bottom" constant="10" id="Rux-lC-qZ9"/>
+                            <constraint firstItem="jQ7-HL-Fb8" firstAttribute="leading" secondItem="vUa-HU-H5z" secondAttribute="leading" constant="40" id="SGP-ff-Bzq"/>
                             <constraint firstItem="Ywu-3o-CLG" firstAttribute="leading" secondItem="vG3-Pw-HMT" secondAttribute="leading" constant="71" id="Uuq-ak-ipK"/>
+                            <constraint firstItem="leh-rY-n2A" firstAttribute="centerY" secondItem="jQ7-HL-Fb8" secondAttribute="centerY" id="VeG-n6-b82"/>
                             <constraint firstItem="hmZ-MY-1BG" firstAttribute="leading" secondItem="vG3-Pw-HMT" secondAttribute="leading" constant="71" id="W5h-5L-W3I"/>
                             <constraint firstItem="Waz-VV-LPh" firstAttribute="top" secondItem="vG3-Pw-HMT" secondAttribute="top" constant="17" id="XIf-N8-JqP"/>
                             <constraint firstItem="gol-Xr-myt" firstAttribute="top" secondItem="y9k-HP-u5z" secondAttribute="bottom" constant="45" id="XyU-DI-Dga"/>
@@ -1324,6 +1352,7 @@
                             <constraint firstItem="66p-rK-ZIG" firstAttribute="leading" secondItem="y9k-HP-u5z" secondAttribute="trailing" id="tn8-BN-acL"/>
                             <constraint firstItem="cEi-FV-t17" firstAttribute="trailing" secondItem="gol-Xr-myt" secondAttribute="trailing" id="v1T-1m-LmJ"/>
                             <constraint firstItem="vG3-Pw-HMT" firstAttribute="trailing" secondItem="Waz-VV-LPh" secondAttribute="trailing" constant="34" id="xaw-9Y-HTe"/>
+                            <constraint firstItem="jQ7-HL-Fb8" firstAttribute="centerY" secondItem="vUa-HU-H5z" secondAttribute="centerY" id="xop-Px-eov"/>
                             <constraint firstItem="dRq-ra-F8N" firstAttribute="leading" secondItem="vG3-Pw-HMT" secondAttribute="leading" constant="34" id="yNE-Qf-Vnh"/>
                         </constraints>
                     </view>
