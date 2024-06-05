@@ -31,6 +31,8 @@
 		E1960ADE2C0AF40D0084C7ED /* groupManagerxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1960ADD2C0AF40D0084C7ED /* groupManagerxVC.swift */; };
 		E1960AE02C0BEAF80084C7ED /* SetttingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1960ADF2C0BEAF80084C7ED /* SetttingsVC.swift */; };
 		E1960AE42C0C28040084C7ED /* IconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1960AE32C0C28040084C7ED /* IconVC.swift */; };
+		E1960AEC2C1034690084C7ED /* craftmincho.otf in Resources */ = {isa = PBXBuildFile; fileRef = E1960AEB2C1034690084C7ED /* craftmincho.otf */; };
+		E1960AEE2C1034870084C7ED /* yosugara1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1960AED2C1034870084C7ED /* yosugara1.1.ttf */; };
 		E1F30DD62C07478B0043320A /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F30DD52C07478B0043320A /* SignupVC.swift */; };
 		E1F30DDA2C07479C0043320A /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F30DD92C07479C0043320A /* SigninVC.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		E1960ADD2C0AF40D0084C7ED /* groupManagerxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupManagerxVC.swift; sourceTree = "<group>"; };
 		E1960ADF2C0BEAF80084C7ED /* SetttingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingsVC.swift; sourceTree = "<group>"; };
 		E1960AE32C0C28040084C7ED /* IconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconVC.swift; sourceTree = "<group>"; };
+		E1960AEB2C1034690084C7ED /* craftmincho.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = craftmincho.otf; sourceTree = "<group>"; };
+		E1960AED2C1034870084C7ED /* yosugara1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yosugara1.1.ttf; sourceTree = "<group>"; };
 		E1F30DD52C07478B0043320A /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		E1F30DD92C07479C0043320A /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,9 +108,10 @@
 				E188D2122C06AA0E005DD7E8 /* writeDiaryVC.swift */,
 				E1960ADF2C0BEAF80084C7ED /* SetttingsVC.swift */,
 				E1960AE22C0C27C90084C7ED /* Clients */,
-				E12172A32C00CE5000821AF7 /* Main.storyboard */,
 				E12172A62C00CE5100821AF7 /* Assets.xcassets */,
+				E12172A32C00CE5000821AF7 /* Main.storyboard */,
 				E12172A82C00CE5100821AF7 /* LaunchScreen.storyboard */,
+				E1960AE52C1031C60084C7ED /* Fonts */,
 				E12172AB2C00CE5100821AF7 /* Info.plist */,
 				E18BE5152C03291300419219 /* GoogleService-Info-Debug.plist */,
 				E18BE5172C03297A00419219 /* GoogleService-Info.plist */,
@@ -132,6 +137,15 @@
 				E188D2142C073FF8005DD7E8 /* OtherHosts.swift */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		E1960AE52C1031C60084C7ED /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E1960AED2C1034870084C7ED /* yosugara1.1.ttf */,
+				E1960AEB2C1034690084C7ED /* craftmincho.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +226,8 @@
 				E12172A72C00CE5100821AF7 /* Assets.xcassets in Resources */,
 				E18BE5162C03291300419219 /* GoogleService-Info-Debug.plist in Resources */,
 				E12172AA2C00CE5100821AF7 /* Base in Resources */,
+				E1960AEE2C1034870084C7ED /* yosugara1.1.ttf in Resources */,
+				E1960AEC2C1034690084C7ED /* craftmincho.otf in Resources */,
 				E12172A52C00CE5000821AF7 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
